@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#9992 Leave Plus</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Sigmar+One&family=Slackey&family=Spicy+Rice&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body onload="myFunction()">
+
+<!--CODE FOR NAVBAR BEGINS-->
+<nav>
+    <ul class="nav justify-content-end">
+        <li class="nav-item mr-auto">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#about-us">Pay Simulation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#tour">Maternities</a>
+      </li>
+    </ul>
+  </nav>
+  <!--CODE FOR LEAVE PLUS FORM-->
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Annual Salary</span>
+    <input type="text" class="form-control" id="annual-salary" aria-label="Annual Salary">
+  </div>
+
+  <div class="form-check w-25 ml-auto mr-auto my-3">
+    <input class="form-check-input" type="checkbox" id="tto-toggle">
+    <label class="form-check-label" for="tto-toggle">Use TTO Amount</label>
+  </div>
+
+  <div class="input-group w-25 ml-auto mr-auto tto-section">
+    <span class="input-group-text">TTO Amount</span>
+    <input type="text" class="form-control" id="tto-amount" aria-label="TTO Amount" disabled>
+  </div>
+
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text term-time-only">Annual Salary (TTO Applied)</span>
+    <span class="form-control" id="tto-applied-salary" aria-label="TTO Applied Salary"></span>
+  </div>
+
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Daily Rate</span>
+    <span class="form-control" id="daily-rate" aria-label="Daily Rate"></span>
+  </div>
+<div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Number of Days Requested</span>
+    <input type="text" class="form-control" id="days-requested" aria-label="Days Requested">
+  </div>
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Total Loan</span>
+    <span class="form-control" id="total-loan" aria-label="Daily Rate"></span>
+  </div>
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Repayment Period (months)</span>
+    <input type="text" class="form-control" id="repayment-period" aria-label="Repayment Period">
+  </div>
+
+  <div class="input-group w-25 ml-auto mr-auto">
+    <span class="input-group-text">Monthly Deductions</span>
+    <span class="form-control" id="monthly-deductions" aria-label="Monthly Deductions"></span>
+  </div>
+
+
+
+
+
+
+
+
+<!--CODE FOR FOOTER BEGINS-->
+<footer class="footer text-center my-3">
+    <p class="">&copy; Copyright 2024 - I &#10084; PAYROLL powered by <a href="https://getbootstrap.com/" target="_blank" class="">Bootstrap</a>.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  <script src="script.js"> </script>
+
+</body>
+
+</html>
