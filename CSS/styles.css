@@ -5,46 +5,35 @@ body {
 
     /* NavBar Styling */
     nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1000;
-      background-color: #336C7F;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-between; /* Distribute space between children */
       align-items: center;
-      padding: 1rem 2rem;
+      padding: .5% 1%;
+      background-color: #336C7F;
     }
 
-    ul.nav {
+    .nav {
       display: flex;
       width: 100%;
-      align-items: center;
       list-style: none;
       margin: 0;
       padding: 0;
     }
 
-    .left-nav {
-      display: flex;
-      align-items: center;
-    }
-
     .title {
-      position: absolute;
       font-family: "Spicy Rice", cursive;
       color: #fff;
       font-size: 200%;
     }
 
     .nav-item {
-      font-size: 1.5rem;
+      margin-left: auto; /* Pushes the nav-item to the right */
     }
 
     .nav-link {
       color: white;
       text-decoration: none;
-      margin: 0 1rem;
+      font-size: 1.5rem;
     }
 
     .heart {
