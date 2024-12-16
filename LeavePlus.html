@@ -17,60 +17,95 @@
 
 <!--CODE FOR NAVBAR BEGINS-->
 <nav>
-    <ul class="nav justify-content-end">
-        <li class="nav-item mr-auto">
-            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-        </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#about-us">Pay Simulation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#tour">Maternities</a>
-      </li>
-    </ul>
-  </nav>
-  <!--CODE FOR LEAVE PLUS FORM-->
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Annual Salary</span>
-    <input type="text" class="form-control" id="annual-salary" aria-label="Annual Salary">
-  </div>
+    
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active home" aria-current="page" href="maternities.html">Maternities</a>
+  </li>
+  <li class="title">I <span class="heart">&#10084;</span> PAYROLL
+  </li>
+  <li class="nav-item">
+      <a class="nav-link active home" aria-current="page" href="index.html">&#127968</a>
+  </li>
+</ul>
+  
+</nav>
 
-  <div class="form-check w-25 ml-auto mr-auto my-3">
-    <input class="form-check-input" type="checkbox" id="tto-toggle">
-    <label class="form-check-label" for="tto-toggle">Use TTO Amount</label>
+ <!-- CODE FOR LEAVE PLUS FORM -->
+ <div class="leave-plus-form">
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Annual Salary</span>
+        <input type="text" class="form-control" id="annual-salary" aria-label="Annual Salary">
+      </div>
+    </div>
   </div>
-
-  <div class="input-group w-25 ml-auto mr-auto tto-section">
-    <span class="input-group-text">TTO Amount</span>
-    <input type="text" class="form-control" id="tto-amount" aria-label="TTO Amount" disabled>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="tto-toggle">
+        <label class="form-check-label" for="tto-toggle">Use TTO Amount</label>
+      </div>
+    </div>
   </div>
-
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text term-time-only">Annual Salary (TTO Applied)</span>
-    <span class="form-control" id="tto-applied-salary" aria-label="TTO Applied Salary"></span>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group tto-section">
+        <span class="input-group-text">TTO Amount</span>
+        <input type="text" class="form-control" id="tto-amount" aria-label="TTO Amount" disabled>
+      </div>
+    </div>
   </div>
-
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Daily Rate</span>
-    <span class="form-control" id="daily-rate" aria-label="Daily Rate"></span>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text term-time-only">Annual Salary (TTO Applied)</span>
+        <span class="form-control" id="tto-applied-salary" aria-label="TTO Applied Salary"></span>
+      </div>
+    </div>
   </div>
-<div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Number of Days Requested</span>
-    <input type="text" class="form-control" id="days-requested" aria-label="Days Requested">
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Daily Rate</span>
+        <span class="form-control" id="daily-rate" aria-label="Daily Rate"></span>
+      </div>
+    </div>
   </div>
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Total Loan</span>
-    <span class="form-control" id="total-loan" aria-label="Daily Rate"></span>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Number of Days Requested</span>
+        <input type="text" class="form-control" id="days-requested" aria-label="Days Requested">
+      </div>
+    </div>
   </div>
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Repayment Period (months)</span>
-    <input type="text" class="form-control" id="repayment-period" aria-label="Repayment Period">
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Total Loan</span>
+        <span class="form-control" id="total-loan" aria-label="Total Loan"></span>
+      </div>
+    </div>
   </div>
-
-  <div class="input-group w-25 ml-auto mr-auto">
-    <span class="input-group-text">Monthly Deductions</span>
-    <span class="form-control" id="monthly-deductions" aria-label="Monthly Deductions"></span>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Repayment Period (months)</span>
+        <input type="text" class="form-control" id="repayment-period" aria-label="Repayment Period">
+      </div>
+    </div>
   </div>
+  <div class="row mb-3">
+    <div class="col-12 col-md-6 mx-auto">
+      <div class="input-group">
+        <span class="input-group-text">Monthly Deductions</span>
+        <span class="form-control" id="monthly-deductions" aria-label="Monthly Deductions"></span>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
