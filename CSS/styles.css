@@ -1,6 +1,12 @@
 /* Main Page Styling */
 body {
-  background-color: #66d8ff;
+  background-color: #ECEAEB;
+}
+
+input[readonly] {
+  background-color: #fff !important;
+  color: #000;
+
 }
 
     /* NavBar Styling */
@@ -9,7 +15,7 @@ body {
       justify-content: space-between; /* Distribute space between children */
       align-items: center;
       padding: .5% 1%;
-      background-color: #336C7F;
+      background-color: #be5d65;
     }
 
     .nav {
@@ -21,7 +27,7 @@ body {
     }
 
     .title {
-      font-family: "Spicy Rice", cursive;
+      font-family: "Lilita One", cursive;
       color: #fff;
       font-size: 200%;
     }
@@ -45,14 +51,22 @@ body {
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding-top: 10%;
+      padding-top: 5%;
+      
     }
 
     .leave-plus-form {
-      padding: 10%;
+      padding: 5%;
     }
 
     .footer {
       position: fixed;
       bottom: 0;
     }
+    input:hover, textarea:hover, select:hover {
+      border: 2px solid #e60e19; /* Change border color */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for a highlight effect */
+      outline: none; /* Remove default outline */
+    }
+    
+    

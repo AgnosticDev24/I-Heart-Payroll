@@ -7,11 +7,11 @@
   <!--Google Fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Rubik+Spray+Paint&family=Sigmar+One&family=Slackey&family=Spicy+Rice&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Passion+One:wght@400;700;900&family=Rubik+Spray+Paint&family=Sigmar+One&family=Slackey&family=Spicy+Rice&display=swap" rel="stylesheet">  <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS/styles.css">
 </head>
+
 
 <body>
   <!-- CODE FOR NAVBAR BEGINS -->
@@ -26,19 +26,38 @@
     </ul>
   </nav>
 
+<!-- CODE FOR PAY SIMULATION FORM -->
+<div class="pay-sim-form">
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Gross Monthly Salary</span>
+          <input type="text" class="form-control" id="gross-salary-pay-sim" aria-label="Gross Monthly Salary">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">National Insurance</span>
+          <input type="text" class="form-control" id="national-insurance" aria-label="National Insurance" readonly>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</body>
-</html>
 
-<!--CODE FOR FOOTER BEGINS-->
-<div class="footer">
-    <p class="ml-auto mr-auto">&copy; Copyright 2024 - I &#10084; PAYROLL powered by <a href="https://getbootstrap.com/" target="_blank" class="text-dark">Bootstrap</a>.</p>
-</div>
+  <!-- CODE FOR FOOTER BEGINS -->
+  <footer class="text-center text-lg-start">
+    <div class="container p-4">
+      <p class="">&copy; Copyright 2024 - I &#10084; PAYROLL powered by <a href="https://getbootstrap.com/" target="_blank" class="text-dark">Bootstrap</a>.</p>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/js/bootstrap.min.js"></script>
-  <script src="script.js"> </script>
+  <script src="ps_script.js"></script>
 </body>
 
 </html>
