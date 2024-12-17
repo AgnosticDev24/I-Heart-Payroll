@@ -26,13 +26,45 @@
     </ul>
   </nav>
 
-<!-- CODE FOR PAY SIMULATION FORM -->
-<div class="pay-sim-form">
+  <!-- CODE FOR PAY SIMULATION FORM -->
+  <div class="pay-sim-form">
     <div class="row mb-3">
       <div class="col-12 col-md-6 mx-auto">
         <div class="input-group">
           <span class="input-group-text">Gross Monthly Salary</span>
           <input type="text" class="form-control" id="gross-salary-pay-sim" aria-label="Gross Monthly Salary">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="bik-toggle">
+          <label class="form-check-label" for="bik-toggle">Benefits in Kind (BIK)</label>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 bik-fields">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Viv-Up</span>
+          <input type="text" class="form-control" id="viv-up" aria-label="Viv-Up">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 bik-fields">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">BHSF</span>
+          <input type="text" class="form-control" id="bhsf" aria-label="BHSF">
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3 bik-fields">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Green Car</span>
+          <input type="text" class="form-control" id="green-car" aria-label="Green Car">
         </div>
       </div>
     </div>
@@ -44,8 +76,31 @@
         </div>
       </div>
     </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Pension</span>
+          <input type="text" class="form-control" id="pension" aria-label="Pension" readonly>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Tax</span>
+          <input type="text" class="form-control" id="income-tax" aria-label="Tax" readonly>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <div class="col-12 col-md-6 mx-auto">
+        <div class="input-group">
+          <span class="input-group-text">Net Pay</span>
+          <input type="text" class="form-control" id="net-pay" aria-label="Net Pay" readonly>
+        </div>
+      </div>
+    </div>
   </div>
-
 
   <!-- CODE FOR FOOTER BEGINS -->
   <footer class="text-center text-lg-start">

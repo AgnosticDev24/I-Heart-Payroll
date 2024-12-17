@@ -15,7 +15,7 @@ input[readonly] {
       justify-content: space-between; /* Distribute space between children */
       align-items: center;
       padding: .5% 1%;
-      background-color: #be5d65;
+      background-color: #f34873;
     }
 
     .nav {
@@ -68,5 +68,7 @@ input[readonly] {
       box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for a highlight effect */
       outline: none; /* Remove default outline */
     }
-    
+    .bik-fields {
+      display: none;
+    }
     
