@@ -1,6 +1,6 @@
 /* Main Page Styling */
 body {
-  background-color: #ECEAEB;
+  background-color: #f7cef0;
 }
 
 input[readonly] {
@@ -15,7 +15,7 @@ input[readonly] {
       justify-content: space-between; /* Distribute space between children */
       align-items: center;
       padding: .5% 1%;
-      background-color: #f34873;
+      background-color: #ff00ff;
     }
 
     .nav {
@@ -59,6 +59,18 @@ input[readonly] {
       padding: 5%;
     }
 
+    .construction-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+    .message {
+      font-size: 1.2rem;
+      color: #343a40;
+    }
+  
+
+
     .footer {
       position: fixed;
       bottom: 0;
@@ -68,7 +80,7 @@ input[readonly] {
       box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for a highlight effect */
       outline: none; /* Remove default outline */
     }
-    .bik-fields {
+    .bik-fields, #pension-rate-container {
       display: none;
     }
     

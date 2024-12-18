@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pensionInput = document.getElementById('pension');
     const taxInput = document.getElementById('income-tax');
     const netPayInput = document.getElementById('net-pay');
+    const pensionToggle = document.getElementById('pension-toggle');
     const bikToggle = document.getElementById('bik-toggle');
     const bikFields = document.querySelectorAll('.bik-fields');
 
@@ -26,8 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
       return monthlyNI;
     }
 
+    function getPensionRate(grossSalary) {
+      if (grossSalary <= 1466.70) {
+        return 0.055; // 5.5%
+      } else if (grossSalary <= 2300) {
+        return 0.06; // 6%
+      } else if (grossSalary <= 3741.70) {
+        return 0.065; // 6.5%
+      } else {
+        return 0.065; // default
+      }
+    }
+
     function calculatePension(grossSalary) {
-      return grossSalary * 0.06; // 6% pension contribution
+      const pensionRate = getPensionRate(grossSalary);
+      return grossSalary * pensionRate;
     }
 
     function calculateTax(grossSalary, pension) {
@@ -39,10 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
       return grossSalary - ni - pension - tax;
     }
 
-    grossSalaryInput.addEventListener('input', function() {
+    function updateCalculations() {
       const grossSalary = parseFloat(grossSalaryInput.value.replace(/,/g, '')) || 0;
       const ni = calculateNI(grossSalary);
-      const pension = calculatePension(grossSalary);
+      const pension = pensionToggle.checked ? calculatePension(grossSalary) : 0;
       const tax = calculateTax(grossSalary, pension);
       const netPay = calculateNetPay(grossSalary, ni, pension, tax);
 
@@ -50,7 +64,10 @@ document.addEventListener('DOMContentLoaded', function() {
       pensionInput.value = pension.toFixed(2);
       taxInput.value = tax.toFixed(2);
       netPayInput.value = netPay.toFixed(2);
-    });
+    }
+
+    grossSalaryInput.addEventListener('input', updateCalculations);
+    pensionToggle.addEventListener('change', updateCalculations);
 
     bikToggle.addEventListener('change', function() {
       if (bikToggle.checked) {
