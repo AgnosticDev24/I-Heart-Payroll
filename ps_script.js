@@ -31,11 +31,15 @@ document.addEventListener('DOMContentLoaded', function() {
       if (grossSalary <= 1466.70) {
         return 0.055; // 5.5%
       } else if (grossSalary <= 2300) {
-        return 0.06; // 6%
+        return 0.060; // 6%
       } else if (grossSalary <= 3741.70) {
         return 0.065; // 6.5%
+      } else if (grossSalary <= 4,733.40) {
+        return 0.068; // 6.8%
+      } else if (grossSalary <= 6,641.70) {
+        return 0.085; // 8.5%
       } else {
-        return 0.065; // default
+        return 0; // default
       }
     }
 
@@ -45,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function calculateTax(grossSalary, pension) {
-      const taxableSalary = grossSalary - pension - 1048;
+      const taxableSalary = grossSalary - pension - 1048.25;
       return taxableSalary > 0 ? taxableSalary * 0.20 : 0; // 20% tax rate
     }
 
