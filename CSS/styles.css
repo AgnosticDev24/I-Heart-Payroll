@@ -1,6 +1,6 @@
 /* Main Page Styling */
 body {
-  background-color: #f7cef0;
+  background-color: #8aafe7;
 }
 
 input[readonly] {
@@ -15,7 +15,7 @@ input[readonly] {
       justify-content: space-between; /* Distribute space between children */
       align-items: center;
       padding: .5% 1%;
-      background-color: #ff00ff;
+      background-color: #440dda;
     }
 
     .nav {
@@ -55,7 +55,7 @@ input[readonly] {
       
     }
 
-    .leave-plus-form {
+    .leave-plus-form, .pay-sim-form,  #password-section {
       padding: 5%;
     }
 
@@ -69,11 +69,23 @@ input[readonly] {
       color: #343a40;
     }
 
-    .card {
+    .card, .card-img-top {
       border-radius: 10%;
     }
-  
 
+    .card-img-top {
+      object-fit: cover;
+      height: 12rem;
+     }
+
+    .btn-gmpf {
+      background-color: #3a19f3;
+      color: #fff;
+    }
+    .btn-mileage {
+      background-color: #343a40;
+      color: #fff;
+    }
 
     .footer {
       position: fixed;
