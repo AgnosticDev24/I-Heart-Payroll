@@ -1,102 +1,53 @@
-/* Main Page Styling */
-body {
-  background-color: #8aafe7;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fjalla One", sans-serif;
+  scroll-behavior: smooth;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the aspect ratio is maintained and the image covers the specified area */
+}
+/*NAVBAR*/
+.navbar {
+  background-color: rgb(184, 134, 11); /* Dark Goldenrod */
+
+}
+.home {
+  font-size: 3.5vh;
 }
 
-input[readonly] {
-  background-color: #fff !important;
-  color: #000;
+/* TITLE SECTION */
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh; /* Full viewport height to center the title vertically */
+  background-color: rgb(30, 6, 56);
+  color: #fff;
+}
+.title {
+  font-size: 4vh; /* Responsive font size */
+}
+.title-section .subtitle {
+  font-size: 3vh;
+}
+.heart {
+  color: red;
+}
+.subtitle, .cta-button, .second-subtitle {
+  margin-top: 1rem; /* Add some space between elements */
+}
+/* INFORMATION SECTION */
+
+.info-section {
+  min-height:100vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vh;
 
 }
-
-    /* NavBar Styling */
-    nav {
-      display: flex;
-      justify-content: space-between; /* Distribute space between children */
-      align-items: center;
-      padding: .5% 1%;
-      background-color: #440dda;
-    }
-
-    .nav {
-      display: flex;
-      width: 100%;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .title {
-      font-family: "Lilita One", cursive;
-      color: #fff;
-      font-size: 200%;
-    }
-
-    .nav-item {
-      margin-left: auto; /* Pushes the nav-item to the right */
-    }
-
-    .nav-link {
-      color: white;
-      text-decoration: none;
-      font-size: 1.5rem;
-    }
-
-    .heart {
-      color: red;
-    }
-
-    .hero-section {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 5%;
-      
-    }
-
-    .leave-plus-form, .pay-sim-form,  #password-section {
-      padding: 5%;
-    }
-
-    .construction-image {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-    .message {
-      font-size: 1.2rem;
-      color: #343a40;
-    }
-
-    .card, .card-img-top {
-      border-radius: 10%;
-    }
-
-    .card-img-top {
-      object-fit: cover;
-      height: 12rem;
-     }
-
-    .btn-gmpf {
-      background-color: #3a19f3;
-      color: #fff;
-    }
-    .btn-mileage {
-      background-color: #343a40;
-      color: #fff;
-    }
-
-    .footer {
-      position: fixed;
-      bottom: 0;
-    }
-    input:hover, textarea:hover, select:hover {
-      border: 2px solid #e60e19; /* Change border color */
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add shadow for a highlight effect */
-      outline: none; /* Remove default outline */
-    }
-    .bik-fields, #pension-rate-container {
-      display: none;
-    }
-    

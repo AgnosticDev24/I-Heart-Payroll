@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;
+  }
+
+  /*NAVBAR*/
+.paysim-nav {
+    background-color: rgb(184, 134, 11); /* Dark Goldenrod */
+  
+  }
+  /* PAY SIM FORM*/
+
+  .pay-sim-form {
+    min-height: 100vh;
+    border-style: dotted;
+    padding: 10%;
+  }
