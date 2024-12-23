@@ -13,7 +13,12 @@
   /* PAY SIM FORM*/
 
   .pay-sim-form {
-    min-height: 100vh;
-    border-style: dotted;
+    min-height: 82.5vh;
     padding: 10%;
+    
+  }
+
+  .page {
+    background-color: rgb(30, 6, 56);
+    color: #fff;
   }

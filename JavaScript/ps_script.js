@@ -34,24 +34,36 @@ document.addEventListener('DOMContentLoaded', function() {
         return 0.060; // 6%
       } else if (grossSalary <= 3741.70) {
         return 0.065; // 6.5%
-      } else if (grossSalary <= 4,733.40) {
+      } else if (grossSalary <= 4733.40) {
         return 0.068; // 6.8%
-      } else if (grossSalary <= 6,641.70) {
+      } else if (grossSalary <= 6641.70) {
         return 0.085; // 8.5%
       } else {
         return 0; // default
       }
     }
-
+    
     function calculatePension(grossSalary) {
       const pensionRate = getPensionRate(grossSalary);
-      return grossSalary * pensionRate;
+      const pension = grossSalary * pensionRate;
+      
+      // Truncate to two decimal places without rounding
+      return Math.floor(pension * 100) / 100;
     }
+    
+    
 
     function calculateTax(grossSalary, pension) {
-      const taxableSalary = grossSalary - pension - 1048.25;
-      return taxableSalary > 0 ? taxableSalary * 0.20 : 0; // 20% tax rate
+      const personalAllowance = 1048.25;
+      const taxableSalary = grossSalary - pension - personalAllowance;
+      const tax = taxableSalary > 0 ? taxableSalary * 0.20 : 0; // 20% tax rate
+      
+      // Round down to the nearest 10 pence
+      const roundedTax = Math.floor(tax * 10) / 10;
+    
+      return roundedTax;
     }
+    
 
     function calculateNetPay(grossSalary, ni, pension, tax) {
       return grossSalary - ni - pension - tax;
