@@ -28,16 +28,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function getPensionRate(grossSalary) {
-      if (grossSalary <= 1466.70) {
+      if (grossSalary*12 <= 17600) {
         return 0.055; // 5.5%
-      } else if (grossSalary <= 2300) {
+      } else if (grossSalary*12 <= 27600) {
         return 0.060; // 6%
-      } else if (grossSalary <= 3741.70) {
+      } else if (grossSalary*12 <= 44900) {
         return 0.065; // 6.5%
-      } else if (grossSalary <= 4733.40) {
+      } else if (grossSalary*12 <= 56800) {
         return 0.068; // 6.8%
-      } else if (grossSalary <= 6641.70) {
+      } else if (grossSalary*12 <= 79700) {
         return 0.085; // 8.5%
+      } else if (grossSalary*12 <= 112900) {
+        return 0.099; // 9.9%
+      } else if (grossSalary*12 <= 133100) {
+        return 0.105; // 10.5%
+      } else if (grossSalary*12 <= 199700) {
+        return 0.114; // 11.4%
+      } else if (grossSalary*12 >= 199701) {
+        return 0.125; // 12.5%
       } else {
         return 0; // default
       }
@@ -64,7 +72,21 @@ document.addEventListener('DOMContentLoaded', function() {
       return roundedTax;
     }
     
-
+    function calculateTax(grossSalary, pension) {
+      const personalAllowance = 1048.25;
+      
+      // Subtract personal allowance and truncate to nearest whole number
+      const taxableSalary = Math.floor(grossSalary - pension - personalAllowance);
+      
+      // Calculate tax based on truncated taxable salary
+      const tax = taxableSalary > 0 ? taxableSalary * 0.20 : 0; // 20% tax rate
+      
+      // Round down to the nearest 10 pence
+      const roundedTax = Math.floor(tax * 10) / 10;
+    
+      return roundedTax;
+    }
+    
     function calculateNetPay(grossSalary, ni, pension, tax) {
       return grossSalary - ni - pension - tax;
     }

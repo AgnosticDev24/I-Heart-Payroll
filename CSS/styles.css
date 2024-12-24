@@ -34,7 +34,6 @@
 .title {
   font-size: 4.5vh; /* Responsive font size */
   
- 
 }
 .title-section .subtitle {
   font-size: 3.5vh;
@@ -49,7 +48,7 @@
 }
 .logo {
   background-color: blue;
-  animation: fadeInDown 2s ease-in-out; /* Apply the animation */
+  animation: fadeInDown 3s ease-in-out; /* Apply the animation */
   
 }
 /* INFORMATION SECTION */

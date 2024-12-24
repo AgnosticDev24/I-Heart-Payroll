@@ -71,16 +71,4 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 
-  // Toggle the display of the answer when a question is clicked
-  document.querySelectorAll('.faq-question').forEach(item => {
-    item.addEventListener('click', () => {
-      const answer = item.nextElementSibling;
-      // Close all open answers
-      document.querySelectorAll('.faq-answer').forEach(answer => {
-        answer.style.display = 'none';
-      });
-      // Open the clicked answer
-      answer.style.display = 'block';
-    })
-  })
 

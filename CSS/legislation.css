@@ -15,7 +15,6 @@
     font-size: 3.5vh;
   }
 
-
   .img-responsive {
     width: 100%;
     height: auto;
@@ -30,8 +29,8 @@
   
   }
   
-  .education, .legislation, .pensions {
-    background-color: blue;
+  .cipp, .payroll-centre, .gov-uk {
+    background-color: rgb(30, 6, 56);
     color: #fff;
     padding: .5rem;
     font-weight: bold;
