@@ -62,8 +62,8 @@
 
 }
 
-.education, .legislation, .pensions {
-  background-color: blue;
+.education, .resources, .pensions {
+  background-color: rgb(184, 134, 11);;
   color: #fff;
   padding: .5rem;
   font-weight: bold;
