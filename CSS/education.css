@@ -104,3 +104,10 @@
 .highlight {
   background-color: rgb(5, 236, 63);
 }
+
+    /* Custom media query for FAQ font on smaller screens */
+    @media (max-width: 650px) {
+      .acc-content {
+        font-size: 1rem;
+      }
+    }
