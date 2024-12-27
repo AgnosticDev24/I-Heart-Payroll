@@ -46,7 +46,7 @@
     text-align: left;
 }
 .acc-btn:after {
-    content: "➡";
+    content: "👇";
     color: rgb(30, 6, 56);
     float: right;
     transition: all 0.5s linear;
