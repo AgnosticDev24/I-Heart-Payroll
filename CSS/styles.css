@@ -13,10 +13,11 @@
 /*NAVBAR*/
 .navbar {
   background-color: rgb(184, 134, 11); /* Dark Goldenrod */
+  opacity: ;
 
 }
 .home {
-  font-size: 3.5vh;
+  font-size: max(3.5vh, 3.5vw);
 }
 
 /* TITLE SECTION */
@@ -32,23 +33,20 @@
   font-family: "Fjalla One";
 }
 .title {
-  font-size: 4.5vh; /* Responsive font size */
-  
-}
-.title-section .subtitle {
-  font-size: 3.5vh;
+  font-size: max(4vh, 4vw) /* Responsive font size */
   
 }
 .heart {
   color: red;
 }
 .subtitle, .cta-button, .second-subtitle {
-  margin-top: 1rem; /* Add some space between elements */
-  font-size: 2vh;
+  margin-top: 1rem; 
+  font-size: max(1.5vh, 1.5vw);
 }
 .logo {
   background-color: blue;
-  animation: fadeInDown 3s ease-in-out; /* Apply the animation */
+  animation: fadeInDown 4s ease-in-out; /* Apply the animation */
+ 
   
 }
 /* INFORMATION SECTION */

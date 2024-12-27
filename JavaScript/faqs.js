@@ -15,3 +15,6 @@ function accordion() {
 
 // event
 btns.forEach((el) => el.addEventListener("click", accordion));
+
+
+// To ensure only one FAQ remains open at a time
