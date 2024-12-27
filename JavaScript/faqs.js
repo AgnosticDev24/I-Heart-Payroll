@@ -19,7 +19,7 @@ btns.forEach((el) => el.addEventListener("click", accordion));
 
 
 
-// To ensure accordian content is hidden on page loading & accordian content is hidden on page loading //
+// To ensure accordian content is hidden on page loading //
 
 document.addEventListener('DOMContentLoaded', () => {
   const accordionButtons = document.querySelectorAll('.accordion-button');

@@ -20,6 +20,7 @@
 .card {
   width: 100%;
   padding: 0 1rem; /* Add padding to avoid overlap on smaller screens */
+  border: none;
 }
 
 .hero {
@@ -32,13 +33,14 @@
 }
 
 .hero img {
-  width: 100%;
+  max-width: 85vw;
   max-width: 100%; /* Ensure the image scales properly */
   height: auto;
 }
 
 .accordion-container {
   width: 100%;
+  margin: 0;
   padding: 1rem; /* Add padding to avoid overlap on smaller screens */
 }
 
@@ -46,28 +48,47 @@
   cursor: pointer;
   width: 100%;
   border: none;
+  border-bottom: 1px solid rgb(184, 134, 11); /* Dark Goldenrod */;
   outline: none;
   text-align: left;
   padding: 1rem;
-  background-color: #e2cd0d;
-  transition: background-color 0.3s;
+  background-color: #fff;
 }
 
-.accordion-button:hover,
-.accordion-button.active {
-  background-color: #ee0505;
+.accordion-button:hover {
+  font-weight: bold;
+}
+
+.accordion-button:after {
+  content: "➤";
+  float: right;
+  font-weight: bold;
+  transform: rotate(90deg);
+  color: rgb(184, 134, 11); /* Dark Goldenrod */
 }
 
 .accordion-content {
-  padding: 0 1rem;
+  padding: 0 2vh;
   display: none;
   overflow: hidden;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(184, 134, 11); /* Dark Goldenrod */;
 }
 
 .accordion-content.show {
   display: block;
+  font-weight: bold;
 }
+
+.accordion-button:focus {
+  border: none;
+  outline: none;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: rgb(184, 134, 11); /* Dark Goldenrod */;;
+}
+
+
 
 
 
