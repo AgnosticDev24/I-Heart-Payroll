@@ -1,78 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    max-width: 100vw;
-  }
- 
-  /*NAVBAR*/
-  .navbar {
-    background-color: rgb(184, 134, 11); /* Dark Goldenrod */
-  
-  }
-  .home {
-    font-size: 3.5vh;
-  }
-  
-  /* FAQ SECTION */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 3vmax;
-    min-height: 100vh; /* Full viewport height to center the title vertically */
+/* ----------------------- NAVBAR ----------------------- */
+.navbar {
+  background-color: rgb(184, 134, 11); /* Dark Goldenrod */
+}
+
+.home {
+  font-size: 3.5vh;
+}
+
+/* ------------------------------------ FAQ SECTION ------------------------------------- */
+
+.card {
+  width: 100%;
+  padding: 0 1rem; /* Add padding to avoid overlap on smaller screens */
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0; /* Ensure no top margin */
+  padding: 0.5rem 0; /* Add some padding for spacing */
 }
 
-.acc-container {
-    padding: 1vmax 2vmax 0;
-}
-.acc-btn {
-    width: 100%;
-    padding: 1.6rem 2rem;
-    font-size: 2vh;
-    cursor: 👆;
-    background: inherit;
-    border: none;
-    outline: none;
-    text-align: left;
-}
-.acc-btn:after {
-    content: "👇";
-    color: rgb(30, 6, 56);
-    float: right;
-    transition: all 0.5s linear;
-}
-.acc-btn.is-open:after {
-    content: "❌";
-}
-.acc-btn:hover, .acc-btn.is-open {
-    color: #000;
-    font-weight: bold;
+.hero img {
+  width: 100%;
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto;
 }
 
-.acc-content {
-    max-height: 0;
-    color: rgba(0,0,0,0.75);
-    margin: 0;
-    padding: 0 2vmax 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    border-bottom: 1px solid rgb(30, 6, 56);
+.accordion-container {
+  width: 100%;
+  padding: 1rem; /* Add padding to avoid overlap on smaller screens */
 }
 
-.highlight {
-  background-color: rgb(5, 236, 63);
+.accordion-button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 1rem;
+  background-color: #e2cd0d;
+  transition: background-color 0.3s;
 }
 
+.accordion-button:hover,
+.accordion-button.active {
+  background-color: #ee0505;
+}
+
+.accordion-content {
+  padding: 0 1rem;
+  display: none;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.accordion-content.show {
+  display: block;
+}
 
 
 
