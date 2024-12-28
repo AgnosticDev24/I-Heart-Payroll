@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
  const navbar = document.getElementById('navbar'); 
   window.addEventListener('scroll', () => { 
-    if (window.scrollY > 100) {
+    if (window.scrollY > 2) {
        navbar.style.opacity = '0.8'; 
       } else { 
         navbar.style.opacity = '1'; 

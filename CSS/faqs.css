@@ -12,7 +12,7 @@
 }
 
 .home {
-  font-size: 3.5vh;
+  font-size: clamp(2rem, 4vh, 4vw);
 }
 
 /* ------------------------------------ FAQ SECTION ------------------------------------- */
@@ -45,18 +45,23 @@
 }
 
 .accordion-button {
+  margin: 0;
   cursor: pointer;
   width: 100%;
   border: none;
-  border-bottom: 1px solid rgb(184, 134, 11); /* Dark Goldenrod */;
   outline: none;
   text-align: left;
   padding: 1rem;
   background-color: #fff;
+  font-size: clamp(1rem, 1.8vh, 1.2rem);
 }
 
 .accordion-button:hover {
   font-weight: bold;
+}
+
+.accordion-content.show {
+  text-decoration: underline;
 }
 
 .accordion-button:after {
@@ -68,29 +73,30 @@
 }
 
 .accordion-content {
-  padding: 0 2vh;
+  margin: 0;
+  padding: 0 1vh;
   display: none;
   overflow: hidden;
   background-color: #fff;
-  border-bottom: 1px solid rgb(184, 134, 11); /* Dark Goldenrod */;
+  font-size: clamp(1rem, 1.8vh, 1.2rem);
 }
 
 .accordion-content.show {
   display: block;
-  font-weight: bold;
+  background-color: blueviolet;
+  
 }
 
 .accordion-button:focus {
   border: none;
   outline: none;
-  font-weight: bold;
-  text-decoration: underline;
-  text-decoration-color: rgb(184, 134, 11); /* Dark Goldenrod */;;
+ 
 }
 
-
-
-
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: rgb(30, 6, 56);
+}
 
 
 

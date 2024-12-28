@@ -19,8 +19,6 @@ btns.forEach((el) => el.addEventListener("click", accordion));
 
 
 
-// To ensure accordian content is hidden on page loading //
-
 document.addEventListener('DOMContentLoaded', () => {
   const accordionButtons = document.querySelectorAll('.accordion-button');
   const accordionContents = document.querySelectorAll('.accordion-content');
@@ -28,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Ensure all accordion content is hidden on page load
   accordionContents.forEach(content => {
     content.style.display = 'none';
+    content.style.backgroundColor = ''; // Reset background color
   });
 
   accordionButtons.forEach(button => {
@@ -36,7 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
       accordionButtons.forEach(btn => {
         if (btn !== button) {
           btn.classList.remove('active');
-          btn.nextElementSibling.style.display = 'none';
+          const content = btn.nextElementSibling;
+          content.style.display = 'none';
+          content.style.backgroundColor = ''; // Reset background color
         }
       });
 
@@ -44,9 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const accordionContent = button.nextElementSibling;
       if (accordionContent.style.display === 'block') {
         accordionContent.style.display = 'none';
+        accordionContent.style.backgroundColor = ''; // Reset background color
         button.classList.remove('active');
       } else {
         accordionContent.style.display = 'block';
+        accordionContent.style.backgroundColor = 'rgba(163, 157, 245, 0.1)'; // Set background color when opened
         button.classList.add('active');
       }
     });
@@ -57,11 +60,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 const navbar = document.getElementById('navbar'); 
 window.addEventListener('scroll', () => { 
-  if (window.scrollY > 10) {
+  if (window.scrollY > 2) {
      navbar.style.opacity = '0.8'; 
     } else { 
       navbar.style.opacity = '1'; 
     }
   });
+
+
+ 
