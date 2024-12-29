@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.remove('active');
       } else {
         accordionContent.style.display = 'block';
-        accordionContent.style.backgroundColor = 'rgba(163, 157, 245, 0.1)'; // Set background color when opened
+        accordionContent.style.backgroundColor = 'rgba(30, 06, 56, 0.2)'; // Set background color when opened
         button.classList.add('active');
       }
     });
