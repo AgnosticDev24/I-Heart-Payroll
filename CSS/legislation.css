@@ -30,7 +30,7 @@
   }
   
   .cipp, .payroll-centre, .gov-uk {
-    background-color: rgb(30, 6, 56);
+    background-color: rgb(184, 134, 11); /* Dark Goldenrod */
     color: #fff;
     padding: .5rem;
     font-weight: bold;

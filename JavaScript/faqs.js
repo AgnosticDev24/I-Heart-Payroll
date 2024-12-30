@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         button.classList.remove('active');
       } else {
         accordionContent.style.display = 'block';
-        accordionContent.style.backgroundColor = 'rgba(30, 06, 56, 0.2)'; // Set background color when opened
+        accordionContent.style.backgroundColor = 'rgb(184, 134, 11, 0.2)'; /* Dark Goldenrod */ // Set background color when opened
         button.classList.add('active');
       }
     });
